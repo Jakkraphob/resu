@@ -3133,12 +3133,12 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 hr {
-				border-bottom-color: rgba(255, 255, 255, 0.25);
+				border-bottom-color: rgba(252, 249, 249, 0.25);
 			}
 
 		.wrapper.style2 {
 			background-color: #000000;
-			color: #999999;
+			color: #fffbfb;
 		}
 
 			.wrapper.style2 input[type="submit"],
@@ -4147,3 +4147,130 @@ input, select, textarea {
 		}
 
 	}
+	h1 {
+		text-align: center;
+		font-size: 3rem;
+		font-family: 'Arial', sans-serif;
+	  }
+	  
+	  h1 a {
+		text-decoration: none;
+		color: rgb(255, 99, 71); /* สีเริ่มต้น */
+		position: relative;
+		display: inline-block;
+		padding: 0.5rem 1.5rem;
+		border: 2px solid rgb(255, 99, 71); /* ขอบลิงก์ */
+		border-radius: 30px; /* ทำให้ขอบมน */
+		transition: all 0.3s ease; /* เพิ่มการเคลื่อนไหวเมื่อมีการเปลี่ยนแปลง */
+		overflow: hidden; /* ป้องกันไม่ให้พื้นหลังหลุดออกจากขอบ */
+	  }
+	  
+	  /* เมื่อเมาส์ชี้ไปที่ลิงก์ */
+	  h1 a:hover {
+		background: rgb(255, 99, 71); /* สีพื้นหลังที่เปลี่ยนเมื่อโฮเวอร์ */
+		color: #fff; /* เปลี่ยนสีตัวอักษรเมื่อโฮเวอร์ */
+		transform: scale(1.1); /* ขยายขนาดเมื่อโฮเวอร์ */
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* เพิ่มเงาขณะโฮเวอร์ */
+	  }
+	  
+	  /* เพิ่มแอนิเมชันคลื่นสีให้กับข้อความ */
+	  h1 a::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(45deg, rgb(255, 99, 71), rgb(30, 144, 255), rgb(50, 205, 50), rgb(255, 140, 0)); /* สีคลื่น */
+		background-size: 200% 200%; /* ขยายคลื่นสี */
+		animation: waveEffect 3s infinite linear;
+		z-index: -1; /* ให้พื้นหลังแอนิเมชันอยู่ด้านหลังตัวอักษร */
+	  }
+	  
+	  /* แอนิเมชันการเคลื่อนที่ของสี */
+	  @keyframes waveEffect {
+		0% {
+		  background-position: -200% -200%; /* เริ่มต้นที่ตำแหน่งซ้ายบน */
+		}
+		100% {
+		  background-position: 200% 200%; /* เคลื่อนที่ไปขวาล่าง */
+		}
+	  }
+/* ตั้งค่าเบื้องต้นให้กับข้อความ */
+p.wave-text {
+	font-size: 3rem;
+	font-family: 'Arial', sans-serif;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	letter-spacing: 2px; /* เพิ่มระยะห่างระหว่างตัวอักษร */
+	color: #333; /* สีเริ่มต้น */
+	padding: 0.5rem;
+	overflow: hidden; /* ซ่อนสิ่งที่เกินออกมาจากขอบ */
+  }
+  
+  /* เพิ่มแอนิเมชันคลื่นสี */
+  p.wave-text span {
+	position: relative;
+	display: inline-block;
+	animation: waveColor 3s infinite; /* เรียกใช้แอนิเมชันคลื่นสี */
+  }
+  
+  /* แอนิเมชันคลื่นสีที่เคลื่อนที่ */
+  @keyframes waveColor {
+	0% {
+	  color: rgb(255, 99, 71); /* สีแดง */
+	}
+	25% {
+	  color: rgb(255, 140, 0); /* สีส้ม */
+	}
+	50% {
+	  color: rgb(50, 205, 50); /* สีเขียว */
+	}
+	75% {
+	  color: rgb(30, 144, 255); /* สีน้ำเงิน */
+	}
+	100% {
+	  color: rgb(255, 99, 71); /* กลับมาที่สีแดง */
+	}
+  }
+  
+  /* ใช้ JavaScript เพื่อแบ่งคำเป็นตัว span */
+  p {
+	font-size: 3rem;
+	font-family: 'Arial', sans-serif;
+	text-align: center;
+	display: inline-block;
+	padding: 0.5rem;
+	font-weight: bold;
+	color: #ffffff; /* สีข้อความ */
+	position: relative;
+	overflow: hidden;
+	letter-spacing: 2px;
+  }
+  
+  /* เส้นใต้ที่ส่องแสง */
+  p::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	height: 3px; /* ความหนาของเส้นใต้ */
+	background: rgb(255, 99, 71); /* สีของเส้นใต้ */
+	box-shadow: 0 0 8px rgb(255, 99, 71); /* เพิ่มเอฟเฟ็กต์แสง */
+	transition: width 0.3s ease, box-shadow 0.3s ease; /* เพิ่มการเคลื่อนไหวของแสง */
+  }
+  
+  /* เมื่อเมาส์ชี้ไปที่ข้อความ */
+  p:hover::after {
+	width: 100%; /* ทำให้เส้นใต้ยืดเต็มความกว้าง */
+	box-shadow: 0 0 16px rgb(255, 99, 71); /* เพิ่มแสงให้มากขึ้นเมื่อโฮเวอร์ */
+  }
+  
+  /* เพิ่มแอนิเมชันขยับตัวหนังสือ */
+  p:hover {
+	transform: translateX(10px); /* ขยับตัวหนังสือไปทางขวา */
+	transition: transform 0.3s ease;
+  }
+ 

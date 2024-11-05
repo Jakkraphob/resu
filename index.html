@@ -6,11 +6,62 @@
 -->
 <html>
 	<head>
-		<title>Fractal by HTML5 UP</title>
+		<title></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			@keyframes shake {
+			  0% { transform: translateX(0); }
+			  25% { transform: translateX(-5px); }
+			  50% { transform: translateX(5px); }
+			  75% { transform: translateX(-5px); }
+			  100% { transform: translateX(0); }
+			}
+		
+			.image:focus-within img {
+			  animation: shake 0.5s ease-in-out;
+			}
+		  </style>
+		  <style>
+			h2 {
+			  font-family: 'Arial', sans-serif;
+			  font-size: 36px;
+			  color: #333;
+			  animation: moveDiagonal 10s ease-in-out infinite, colorChange 5s ease-in-out infinite;
+			}
+		
+			/* Animation for diagonal movement */
+			@keyframes moveDiagonal {
+			  0% {
+				transform: translate(-100%, -100%);
+			  }
+			  50% {
+				transform: translate(0, 0);
+			  }
+			  
+			}
+		
+			/* Animation for color changing */
+			@keyframes colorChange {
+			  0% {
+				color: #FF6347; /* Tomato */
+			  }
+			  25% {
+				color: #32CD32; /* Lime Green */
+			  }
+			  50% {
+				color: #1E90FF; /* Dodger Blue */
+			  }
+			  75% {
+				color: #FF1493; /* Deep Pink */
+			  }
+			  100% {
+				color: #FF6347; /* Tomato */
+			  }
+			}
+		  </style>
 	</head>
 	<body class="is-preload">
 
@@ -18,21 +69,24 @@
 			<header id="header" >
 				<div class="content">
 					<h1><a href="#">RESUME</a></h1>
-					<p>Jakkraphob Wongwuttiwat<br />
-					 <a href="http://html5up.net"></a></p>			
+					<p>Jakkraphob Wongwuttiwat</p>		
 				</div>
-				<div class="image phone"><div class="inner"><img src="images/aww.jpg" alt="" /></div></div>
+				  <div class="image phone" tabindex="0">
+    <div class="inner">
+      <img src="images/aww.jpg" alt="" />
+    </div>
+  </div>
 			</header>
 
 		<!-- One -->
 			<section id="one" class="wrapper style2 special">
 				<header class="major">
-					<h2>ข้อมูลส่วนตัว</h2><br>
-						<p>นายจักรภพ วงศ์วุฒิวัฒน์<br>
+					<h2>Information</h2><br>
+						<h3>นายจักรภพ วงศ์วุฒิวัฒน์<br>
 							ชื่อเล่น แก๊ก<br>
 							อายุ 22 ปี<br>
 							เกิดวันที่ 14 มีนาคม 2545<br>
-							ที่อยู่ 11/1 หมู่ 6 ตำบล หมูม่น อำเภอ เมืองอุดรธานี จังหวัดอุดรธานี 41000เกิดวันที่ 14 มีนาคม 2545</p>
+							ที่อยู่ 11/1 หมู่ 6 ตำบล หมูม่น อำเภอ เมืองอุดรธานี จังหวัดอุดรธานี 41000เกิดวันที่ 14 มีนาคม 2545</h3>
 				</header>
 				<ul class="icons major">
 					<li><span class="icon solid fa-camera-retro"><span class="label">Shoot</span></span></li>
@@ -42,30 +96,34 @@
 			</section>
 
 		<!-- Two -->
+		 
 			<section id="two" class="wrapper">
 				<div class="inner alt">
 					<section class="spotlight">
-						<div class="image"><img src="images/qaa.png" alt="" /></div>
+						<div class="image"> <a href="http://www.udru.ac.th/"> <img src="images/qaa.png" alt="" /> </a> </div>
 						<div class="content">
-							<h3>Educational</h3>
-							<p>วิทยาลัยเทคนิคอุดรธานี2017 - 2020 ปวช. นักพัฒนาซอฟต์แวร์คอมพิวเตอร์<br>
-								วิทยาลัยเทคนิคอุดรธานี2020 - 2022 ปวส. นักพัฒนาซอฟต์แวร์คอมพิวเตอร์</p>
+							<h2>Educational</h2>
+							<h3>วิทยาลัยเทคนิคอุดรธานี2017 - 2020 ปวช. นักพัฒนาซอฟต์แวร์คอมพิวเตอร์<br>
+								วิทยาลัยเทคนิคอุดรธานี2020 - 2022 ปวส. นักพัฒนาซอฟต์แวร์คอมพิวเตอร์</h3>
 						</div>
 					</section>
 					<section class="spotlight">
-						<div class="image"><img src="images/cds.png" alt="" /></div>
+						<div class="image"><a href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDMxd3Brc3g2aXB2aWs4bTQ3YXdwcW1jN3E1aHM4ZjJiODh2NG4xcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U1xg0NEkJY7t1LJoZv/giphy.gif"></a><img src="images/cds.png" alt="" /></div>
 						<div class="content">
-							<h3>SKILLS</h3>
-							<p>สามารถใช้โปรแกรม Microsoft Word, Excel, PowerPoint, Access<br>
+							<h2>SKILLS</h2>
+							<h3>สามารถใช้โปรแกรม Microsoft Word, Excel, PowerPoint, Access<br>
 								เข้าใจภาษาคอมพิวเตอร์ Python , C++ , html, css ในระดับพื้นฐาน<br>
-								สามารถใช้โปรแกรมฐานข้อมูล MySQL,Access</p>
+								สามารถใช้โปรแกรมฐานข้อมูล MySQL,Access</h3>
 						</div>
 					</section>
 					<section class="spotlight">
-						<div class="image"><img src="images/ahh.png" alt="" /></div>
+						<div class="image"><a href="https://en.bandainamcoent.eu/elden-ring/elden-ring"></a><img src="images/ahh.png" alt="" /></div>
 						<div class="content">
-							<h3>HOBBY</h3>
-							<p>เล่นเกม เล่นบาส อ่านหนังสือ กินเบียร์</p>
+							<h2>HOBBY</h2>
+							<h3>เล่นเกม PC แทบทุกแนว หลักๆจะเป็นแนว souls , shooter 🕹️<br> 
+								เล่นบาสเกตบอล ตำแหน่ง Point Guard , Shooting Guard🏀<br> 
+								อ่านหนังสือการ์ตูน,นิยาย 📖<br> 
+								กินเบียร์ 🍻</h3>
 						</div>
 					</section>
 					<section class="special">
@@ -85,7 +143,7 @@
 							Phone : 095-843-3545<br>
 							Email : 65001308109@udru.ac.th 
 											
-						</ul><br />
+						</ul>
 	</p>
 				</header>			
 			</section>
@@ -411,8 +469,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- Footer -->
 			<footer id="footer">
-				
-				<p class="copyright">&copy; Untitled. Credits: <a href="http://html5up.net">HTML5 UP</a></p>
+				<style>
+					.copyright a {
+					  font-size: 36px; /* กำหนดขนาดตัวอักษร */
+					  text-decoration: none; /* เอาขีดเส้นใต้ของลิงก์ออก */
+					}
+				  </style>
+				<p class="copyright"><a href="">👆🛸🛸🆙🛸🛸☝️</a></p>
 			</footer>
 
 		<!-- Scripts -->
