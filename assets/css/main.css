@@ -3710,9 +3710,9 @@ input, select, textarea {
 
 		#header input[type="checkbox"]:checked + label:before,
 		#header input[type="radio"]:checked + label:before {
-			background-color: #ffffff;
+			background-color: #ff0000;
 			border-color: #ffffff;
-			color: #4696e5;
+			color: #ff6600;
 		}
 
 		#header input[type="checkbox"]:focus + label:before,
@@ -3726,7 +3726,7 @@ input, select, textarea {
 		}
 
 		#header :-moz-placeholder {
-			color: #b5d5f5 !important;
+			color: #ff3300 !important;
 		}
 
 		#header ::-moz-placeholder {
@@ -4075,7 +4075,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background-color: #f7f7f7;
+		background-color: #000000;
 		color: #999999;
 		padding: 4.5em 0 2.5em 0 ;
 		color: #b0b0b0;
